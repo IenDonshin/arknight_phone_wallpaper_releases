@@ -1,2 +1,24 @@
-# arknight_phone_wallpaper_releases
-Public signed APK releases for Arknight Phone Wallpaper. Source code remains private.
+# 方舟干员壁纸 · APK 发布
+
+[下载最新版 APK](https://github.com/IenDonshin/arknight_phone_wallpaper_releases/releases/latest)
+
+支持 Android 8.0 及以上。此仓库用于公开发布签名 APK 和更新清单，源码仓库保持私有。
+
+## 0.1.0 开发测试版
+
+- 森空岛官网登录与明日方舟角色选择。
+- 同步干员，严格筛选账号已精二干员作为轮换候选，并支持勾选。
+- 每个角色独立保存候选选择和干员缓存，失败保留上次完整同步结果。
+- 每次打开 App 检查 GitHub 更新，确认后下载、校验并打开系统安装器。
+
+当前尚未实现图片下载和壁纸轮换。已通过 10 项本机单元测试、Android lint 错误检查和 APK 签名验证；真实账号登录、厂商 WebView 兼容性和更新安装过程需要真机测试。
+
+## 安装与测试
+
+1. 在手机浏览器打开 Release，下载 `.apk` 文件；`update.json` 由 App 使用，无需手动下载。
+2. 首次安装时按安卓提示允许浏览器安装应用。
+3. 打开 App，点击“森空岛官网登录”，在官方页面完成登录，返回森空岛首页后点击“已登录，同步干员”。
+4. 检查已精二干员数量与实际账号是否一致；可点击角色名称切换官服/B服角色。
+5. 后续新版使用相同 APK 签名，可覆盖升级保留本地数据。首次通过 App 更新时需在系统设置中允许本 App 安装 APK，并在系统安装器确认。
+
+登录凭证仅加密保存在本机，不需要提供 GitHub Token。退出账号会清除本机登录状态、干员缓存和候选选择。
